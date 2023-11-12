@@ -1,0 +1,73 @@
+.boxes-container {
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+#editor {
+  flex: 1;
+  height: 80vh;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: left;
+  background-color: whitesmoke;
+  resize: none;
+  color: black;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+#preview {
+  flex: 1;
+  height: 80vh;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px;
+  margin-left: 20px;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+img {
+  margin-top: 10px;
+  max-width: 50%;
+}
+
+.signature-container {
+  flex: 0; 
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: right; 
+  padding: 10px;
+  color: gray; 
+}
+
+@media screen and (min-width:768px){
+  .boxes-container{
+      flex-direction: row;
+      width: 80%;
+  }
+
+  #editor {
+      width: 50%;
+      height:80vh;
+      margin-right: 10px;
+  }
+
+  #preview{
+      width:50%;
+      height:80vh;
+      margin-left: 10px;
+      margin-top: 0;
+  }
+
+
+}
